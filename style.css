@@ -1,0 +1,55 @@
+.logo {
+    height: auto;
+    width: 30px;
+}
+
+.navbar {
+    display:flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 230px;
+    margin-left: 230px;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+}
+
+.header-left-col {
+    display: flex;
+}
+
+.header-right-col {
+    display: flex;
+}
+
+.pages-list {
+    
+}
+
+li {
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-text {
+    align-items: center;
+}
+
+.darkModePng {
+    height: auto;
+    width: 30px;
+}
+
+.searchIcon {
+    height: auto;
+    width: 20px;
+    padding: 5px;
+}
+
+.search-box {
+    padding: 5px;
+    border: none;
+
+}
