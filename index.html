@@ -4,55 +4,295 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="header-left-col">
-        <div class="logo-text">
-          <img
-            class="logo"
-            src="/VS_Code_LandingPage/images/visual-studio-code-icon.png"
-            alt="VS code icon"
-          />
-          <span style="font-size: 20px; font-weight: 550"
-            >Visual Studio Code</span
-          >
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="header-left-col">
+          <div class="logo-icon-text">
+            <img
+              class="logo"
+              src="/vsCodeLandingPage/images/visual-studio-code-icon.svg"
+              alt="VS code icon"
+            />
+            <span class="logo-text" style="margin-left: 5px"
+              >Visual Studio Code</span
+            >
+          </div>
+          <div class="pages-list">
+            <ul id="navigation">
+              <li id="pages">Docs</li>
+              <li id="pages">Updates</li>
+              <li id="pages">Blog</li>
+              <li id="pages">API</li>
+              <li id="pages">Extensions</li>
+              <li id="pages">FAQ</li>
+              <li id="pages">Learn</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="header-right-col">
-        <div class="pages-list">
-          <ul>
-            <li>Docs</li>
-            <li>Updates</li>
-            <li>Blog</li>
-            <li>API</li>
-            <li>Extensions</li>
-            <li>FAQ</li>
-            <li>Learn</li>
-          </ul>
+        <div class="header-right-col">
+          <div class="tools-list">
+            <ul id="search">
+              <li id="tools">
+                <!-- <img
+                  class="darkModePng"
+                  src="/vsCodeLandingPage/images/darkMode.svg"
+                  alt="darkModePng"
+                /> -->
+              </li>
+              <li id="tools">
+                <label for="search-box" style="cursor: pointer">
+                  <!-- <img
+                    class="searchIcon"
+                    src="/vsCodeLandingPage/images/searchIcon.svg"
+                    alt="searchIcon"
+                  /> -->
+                </label>
+                <input
+                  id="search-box"
+                  class="search-box"
+                  type="text"
+                  placeholder="Search Docs"
+                />
+              </li>
+              <li id="tools">
+                <button class="download-btn">
+                  <span style="font-weight: 600; font-size: 16px; color: white">
+                    Download
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="tools-list">
-          <ul>
-            <li>
-              <img class="darkModePng"
-              src="/VS_Code_LandingPage/images/darkMode.png" alt=darkModePng" />
-            </li>
-            <li style="align-items: center;">
-              <label for="search-box"
-              >
-              <img
-                class="searchIcon"
-                src="/VS_Code_LandingPage/images/searchIcon.png"
-                alt="searchIcon"
-              />
-            </label>
-            <input class="search-box" type="text" placeholder="Search Docs" />
-          </li>
-            <li>
-              <button class="download-btn">
-                <span style="font-weight:600;">Download</span>
-              </button>
-            </li>
-          </ul>
       </div>
     </div>
+    <div class="banner">
+      <div class="updates">
+        <p class="banner-text">
+          <a href="/https://code.visualstudio.com/updates">Version 1.92</a> is
+          now available! Read about the new features and fixes from July.
+        </p>
+      </div>
+    </div>
+    <div class="jumbotron-container">
+      <div class="hero-content">
+        <div class="hero-left-col">
+          <div class="downloadText">
+            <p class="hero-tag">Free. Built on open source. Runs everywhere.</p>
+            <h1 id="biggest-text">
+              Code Editing <br />
+              Redefined
+            </h1>
+          </div>
+          <div class="downlaod-content">
+            <div class="download-buttons">
+              <button class="deb">
+                <div id="download-text">
+                  <img
+                    src="/vsCodeLandingPage/images/downloadIcon.svg"
+                    alt="downloadIcon"
+                    class="downloadIcon"
+                  />
+                  <p
+                    style="
+                      font-size: medium;
+                      font-weight: 600;
+                      color: aliceblue;
+                      margin-top: 3px;
+                    "
+                  >
+                    .deb
+                  </p>
+                </div>
+
+                <small>Debian, Ubuntu...</small>
+              </button>
+              <button class="rpm">
+                <div id="download-text">
+                  <img
+                    src="/vsCodeLandingPage/images/downloadIcon.svg"
+                    alt="downloadIcon"
+                    class="downloadIcon"
+                  />
+                  <p
+                    style="
+                      font-size: medium;
+                      font-weight: 600;
+                      color: aliceblue;
+                      margin-top: 3px;
+                    "
+                  >
+                    .rpm
+                  </p>
+                </div>
+
+                <small>Red Hat, Fedora...</small>
+              </button>
+            </div>
+            <p class="insider1">
+              <a href="">Web</a>, <a href="">Insiders edition</a>, or
+              <a href="">other platforms</a>
+            </p>
+            <p class="insider2">
+              By using VS Code, you agree to its
+              <a href="" class="license">license</a> and
+              <a href="" class="preivacy-statement">privacy statement</a>.
+            </p>
+          </div>
+        </div>
+        <div class="hero-right-col">
+          <img
+            src="/vsCodeLandingPage/images/editorImage.png"
+            alt="VS code editor image"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="third-container">
+      <div class="first">
+        <div class="first-content">
+          <div class="first-content-left-col">
+            <div>
+              <h2>Code in any language</h2>
+              <p>
+                VS Code supports almost every major <br />
+                programming language. Several ship in the box, <br />
+                like JavaScript, TypeScript, CSS, and HTML, but <br />
+                extensions for others can be found in the VS Code <br />
+                Marketplace.
+              </p>
+            </div>
+          </div>
+          <div class="first-content-right-col">
+            <div class="languages">
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-js.png"
+                  alt="JavaScript"
+                />
+                <code>Javascript</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-ts.png"
+                  alt="TypeScript"
+                />
+                <code>Typescript</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-python.png"
+                  alt="Python"
+                />
+                <code>Python</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-cs.png"
+                  alt="C sharp"
+                />
+                <code>C#</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-cpp.png"
+                  alt="cpp"
+                />
+                <code>C++</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-html.png"
+                  alt="html"
+                />
+                <code>HTML</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-java.png"
+                  alt="Java"
+                />
+                <code>Java</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-json.png"
+                  alt="JSON"
+                />
+                <code>JSON</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-php.png"
+                  alt="php"
+                />
+                <code>PHP</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-markdown.png"
+                  alt="markdown"
+                />
+                <code>Markdown</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-powershell.png"
+                  alt="powershell"
+                />
+                <code>Powershell</code>
+              </div>
+              <div class="langs">
+                <img
+                  src="/vsCodeLandingPage/images/language-yaml.png"
+                  alt="yaml"
+                />
+                <code>YAML</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second">
+        <div class="second-content">
+          <div class="second-content-left-col">
+            <div>
+              <h2>Code with GitHub Copilot</h2>
+              <p>
+                Write code faster and smarter with GitHub Copilot, your AI pair
+                programmer. <br> <a href="/">Try GitHub Copilot free for 30 days</a> <br> <br><br> <a href="/">Completions</a>
+                present suggestions automatically to help you code more
+                efficiently. <br><br> <a href="/">Copilot Chat</a> understands the context of your code,
+                workspace, extensions, settings, and more. <br><br> <a href="/">Inline Chat</a> enables
+                you to iteratively generate edits and get answers to quick
+                questions, directly on your code.
+              </p>
+            </div>
+          </div>
+          <div class="second-content-right-col">
+            <img
+              src="/vsCodeLandingPage/images/swimlane-copilot.png"
+              alt="swimlane-copilot"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+      <div class="footer-first">
+        <div class="footer-social">
+          <ul>
+            <li><a href="">Twitter</a></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-second">
+
+      </div>
+    </div> --> 
+    <!-- AMANSINGH : I have to complete the  footer div-->
   </body>
 </html>
